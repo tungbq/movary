@@ -3,7 +3,7 @@ name: Build and publish nightly docker image to docker hub
 on:
   push:
     branches:
-      - main
+      - add-nightly-docker-image
 
 jobs:
   push_to_registry:
