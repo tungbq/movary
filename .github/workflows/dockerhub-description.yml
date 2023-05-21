@@ -3,7 +3,7 @@ name: Update docker hub description with README
 on:
   push:
     branches:
-      - main
+      - add-nightly-docker-image
     paths:
       - README.md
       - .github/workflows/dockerhub-description.yml
@@ -19,5 +19,5 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: leepeuker/movary
+          repository: tungbq/movary
           short-description: ${{ github.event.repository.description }}
